@@ -1,36 +1,39 @@
 CM 
 CE
 SY F = 5775	'Design frequency (MHz)
-SY VF = 1.015	'Wire length scaling
+SY VF = 1	'Wire length scaling
 SY WR = 0.000508 / 2	'Wire diameter (mm)
 SY WL = VF * (299.792458 / F)	'Computed wavelength
 SY FR = .0015	'Feed radius (m)
 SY WHR = 0.44	'Width to height ratio
 SY TL = 1.0	'Turn length (wavelengths)
 SY NT = 0.5	'Number of turns
-SY R1 = .0074 / 2
-SY H1 = .0169
-SY R2 = .007 / 2
-SY H2 = .016
-SY E = 0.125
+SY E = 0.0	'Elevation over groundplane (wavelengths)
+SY DELTA = 0.026	'Turn length delta
+SY L1 = WL * (1 + DELTA)
+SY L2 = WL * (1 - DELTA)
+SY D1 = (0.5 * L1) / (1 + (1/WHR)^(0.5) + (PI*NT)^2)
+SY H1 = D1 / WHR
+SY D2 = (0.5 * L2) / (1 + (1/WHR)^(0.5) + (PI*NT)^2)
+SY H2 = D2 / WHR
 GW	1	1	FR	0	0	0	FR	0	WR
 GW	2	1	-FR	0	0	0	-FR	0	WR
-GW	11	1	FR	0	0	R1	0	0	WR
-GW	12	1	-FR	0	0	-R1	0	0	WR
-GW	21	1	0	FR	0	0	R2	0	WR
-GW	22	1	0	-FR	0	0	-R2	0	WR
-GW	31	3	R1	0	H1	-R1	0	H1	WR
-GW	32	3	0	R2	H2	0	-R2	H2	WR
-GH	41	10	H1 * 2	H1	R1	R1	R1	R1	WR
-GH	42	10	H1 * 2	H1	R1	R1	R1	R1	WR
+GW	11	1	FR	0	0	D1/2	0	0	WR
+GW	12	1	-FR	0	0	-D1/2	0	0	WR
+GW	21	1	0	FR	0	0	D2/2	0	WR
+GW	22	1	0	-FR	0	0	-D2/2	0	WR
+GW	31	3	D1/2	0	H1	-D1/2	0	H1	WR
+GW	32	3	0	D2/2	H2	0	-D2/2	H2	WR
+GH	41	10	H1 * 2	H1	D1/2	D1/2	D1/2	D1/2	WR
+GH	42	10	H1 * 2	H1	D1/2	D1/2	D1/2	D1/2	WR
 GM	0	0	0	0	180	0	0	0	42
-GH	43	10	H2 * 2	H2	R2	R2	R2	R2	WR
+GH	43	10	H2 * 2	H2	D2/2	D2/2	D2/2	D2/2	WR
 GM	0	0	0	0	90	0	0	0	43
-GH	44	10	H2 * 2	H2	R2	R2	R2	R2	WR
+GH	44	10	H2 * 2	H2	D2/2	D2/2	D2/2	D2/2	WR
 GM	0	0	0	0	270	0	0	0	44
 GM	0	0	0	0	0	0	0	E * WL	1
-GE	0
-GN	-1
+GE	-1
+GN	2	0	0	0	4	0.003
 EK
 EX	0	1	1	0	1	0	0
 EX	0	2	1	0	-1	0	0
