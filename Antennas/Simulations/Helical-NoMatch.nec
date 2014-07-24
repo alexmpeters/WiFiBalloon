@@ -1,0 +1,19 @@
+CM 
+CE
+SY F = 5775	'Design frequency (MHz)
+SY VF = 1	'Wire length scaling
+SY WR = 0.000762 / 2	'Wire diameter (mm)
+SY WL = VF * (299.792458 / F)	'Computed wavelength
+SY R = WL / (2 * PI)
+SY S = 0.23 * WL
+SY NT = 20
+SY FL = 0.0005 + WR
+GH	2	12*NT	S	S*(NT-0.25)	R	R	R	R	WR
+GM	0	0	0	0	0	0	0	FL	2
+GW	1	1	R	0	0	R	0	FL	WR
+GE	1
+GN	2	0	0	0	4	0.003
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	F	0
+EN
