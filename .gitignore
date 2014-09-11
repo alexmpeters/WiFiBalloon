@@ -2,7 +2,7 @@
 Antennas/Simulations/opt/
 
 # KiCad
-*bak
+*.bak
 *.bck
 *.000
 $*
