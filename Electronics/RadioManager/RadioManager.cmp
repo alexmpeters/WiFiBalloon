@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 9/21/2014 11:03:02 PM
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 10/2/2014 8:57:31 PM
 
 BeginCmp
 TimeStamp = /53DFFD33/5410F4F7;
@@ -178,15 +178,15 @@ EndCmp
 BeginCmp
 TimeStamp = /5410EB07/5416149E;
 Reference = C26;
-ValeurCmp = C;
-IdModule  = ;
+ValeurCmp = 10000pF;
+IdModule  = CAPC1608-N;
 EndCmp
 
 BeginCmp
-TimeStamp = /5410EB07/54160FBC;
+TimeStamp = /5410EB07/542E03F3;
 Reference = C27;
-ValeurCmp = C;
-IdModule  = ;
+ValeurCmp = 10000pF;
+IdModule  = CAPC1608-N;
 EndCmp
 
 BeginCmp
@@ -211,10 +211,10 @@ IdModule  = CAPC1608-N;
 EndCmp
 
 BeginCmp
-TimeStamp = /5410EB07/5410EB9F;
+TimeStamp = /5410EB07/542E1DE3;
 Reference = D1;
-ValeurCmp = DIODE-SCH;
-IdModule  = ;
+ValeurCmp = CDBA140;
+IdModule  = SODFL5126-N;
 EndCmp
 
 BeginCmp
@@ -227,15 +227,15 @@ EndCmp
 BeginCmp
 TimeStamp = /5410EB07/541614C0;
 Reference = D3;
-ValeurCmp = DIODE-SCH;
-IdModule  = ;
+ValeurCmp = CDBA140;
+IdModule  = SODFL5126-N;
 EndCmp
 
 BeginCmp
-TimeStamp = /5410EB07/54161067;
+TimeStamp = /5410EB07/542E1DC4;
 Reference = D4;
-ValeurCmp = DIODE-SCH;
-IdModule  = ;
+ValeurCmp = CDBA140;
+IdModule  = SODFL5126-N;
 EndCmp
 
 BeginCmp
@@ -409,28 +409,28 @@ EndCmp
 BeginCmp
 TimeStamp = /5410EB07/541614B2;
 Reference = R12;
-ValeurCmp = R;
+ValeurCmp = 49.9k;
 IdModule  = RESC1608-N;
 EndCmp
 
 BeginCmp
 TimeStamp = /5410EB07/541614BA;
 Reference = R13;
-ValeurCmp = R;
+ValeurCmp = 15.8k;
 IdModule  = RESC1608-N;
 EndCmp
 
 BeginCmp
 TimeStamp = /5410EB07/54161031;
 Reference = R14;
-ValeurCmp = R;
+ValeurCmp = 80.6k;
 IdModule  = RESC1608-N;
 EndCmp
 
 BeginCmp
 TimeStamp = /5410EB07/5416104C;
 Reference = R15;
-ValeurCmp = R;
+ValeurCmp = 64.2k;
 IdModule  = RESC1608-N;
 EndCmp
 

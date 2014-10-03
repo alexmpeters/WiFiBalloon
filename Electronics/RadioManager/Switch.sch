@@ -8,7 +8,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
 Title ""
-Date "22 sep 2014"
+Date "3 oct 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -827,45 +827,45 @@ F 3 "" H 1600 5500 60  0000 C CNN
 	1    1600 5500
 	1    0    0    -1  
 $EndComp
-Text HLabel 10600 1200 2    60   Input ~ 0
+Text HLabel 10600 1400 2    60   Input ~ 0
 RXP1
-Text HLabel 10600 1300 2    60   Input ~ 0
+Text HLabel 10600 1500 2    60   Input ~ 0
 RXM1
-Text HLabel 10600 1400 2    60   Output ~ 0
+Text HLabel 10600 1200 2    60   Output ~ 0
 TXP1
-Text HLabel 10600 1500 2    60   Output ~ 0
+Text HLabel 10600 1300 2    60   Output ~ 0
 TXM1
-Text HLabel 10600 2300 2    60   Input ~ 0
+Text HLabel 10600 2500 2    60   Input ~ 0
 RXP2
-Text HLabel 10600 2400 2    60   Input ~ 0
+Text HLabel 10600 2600 2    60   Input ~ 0
 RXM2
-Text HLabel 10600 3500 2    60   Input ~ 0
+Text HLabel 10600 3700 2    60   Input ~ 0
 RXM3
-Text HLabel 10600 4600 2    60   Input ~ 0
+Text HLabel 10600 4800 2    60   Input ~ 0
 RXM4
-Text HLabel 10600 5800 2    60   Input ~ 0
+Text HLabel 10600 6000 2    60   Input ~ 0
 RXM5
-Text HLabel 10600 3400 2    60   Input ~ 0
+Text HLabel 10600 3600 2    60   Input ~ 0
 RXP3
-Text HLabel 10600 4500 2    60   Input ~ 0
+Text HLabel 10600 4700 2    60   Input ~ 0
 RXP4
-Text HLabel 10600 5700 2    60   Input ~ 0
+Text HLabel 10600 5900 2    60   Input ~ 0
 RXP5
-Text HLabel 10600 2500 2    60   Output ~ 0
+Text HLabel 10600 2300 2    60   Output ~ 0
 TXP2
-Text HLabel 10600 3600 2    60   Output ~ 0
+Text HLabel 10600 3400 2    60   Output ~ 0
 TXP3
-Text HLabel 10600 4700 2    60   Output ~ 0
+Text HLabel 10600 4500 2    60   Output ~ 0
 TXP4
-Text HLabel 10600 5900 2    60   Output ~ 0
+Text HLabel 10600 5700 2    60   Output ~ 0
 TXP5
-Text HLabel 10600 2600 2    60   Output ~ 0
+Text HLabel 10600 2400 2    60   Output ~ 0
 TXM2
-Text HLabel 10600 3700 2    60   Output ~ 0
+Text HLabel 10600 3500 2    60   Output ~ 0
 TXM3
-Text HLabel 10600 4800 2    60   Output ~ 0
+Text HLabel 10600 4600 2    60   Output ~ 0
 TXM4
-Text HLabel 10600 6000 2    60   Output ~ 0
+Text HLabel 10600 5800 2    60   Output ~ 0
 TXM5
 $Comp
 L GND #PWR055
