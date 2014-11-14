@@ -1,0 +1,10 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 11/13/2014 7:31:41 PM
+
+BeginCmp
+TimeStamp = /546553C0;
+Reference = AE1;
+ValeurCmp = WAVEGUIDE;
+IdModule  = WAVE-COAX-600x500x200-SPLIT;
+EndCmp
+
+EndListe
